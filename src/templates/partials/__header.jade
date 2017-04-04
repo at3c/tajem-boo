@@ -5,7 +5,7 @@ header
 				nav.navbar.navbar-default
 					.container-fluid
 						.navbar-header
-							a(class="navbar-brand" href="#") WebSiteName
+							a(class="navbar-brand" href="#") tajem
 						ul.nav.navbar-nav.navbar-right
 							li.active
 								a(class="text-uppercase" href="#") home
@@ -21,6 +21,56 @@ header
 								a(class="text-uppercase" href="#") people say
 							li
 								a(class="text-uppercase" href="#") contact
-				p.text-center.text-capitalize we are Awesome Creative Agency			
-
-
+				.container
+					.row
+						.col-md-12							
+							br				
+							div(id="myCarousel" class="carousel slide" data-ride="carousel")
+								//Indicators
+								ol.carousel-indicators
+									li(data-target="#myCarousel" data-slide-to="0" class="active")
+									li(data-target="#myCarousel" data-slide-to="1")
+									li(data-target="#myCarousel" data-slide-to="2")
+									li(data-target="#myCarousel" data-slide-to="3")
+								//Wrapper for slides
+								div(class="carousel-inner" role="listbox")
+									.item.active		
+										.carousel-caption
+											h1.text-capitalize we are awesome creative agency
+											p.text-center This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+											p.text-center quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+											p.text-center vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+											.text-center
+												btn(type="button" class="btn.text-uppercase") load more
+									.item		
+										.carousel-caption
+											h1.text-capitalize we 
+											p.text-center This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+											p.text-center quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+											p.text-center vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+											.text-center
+												btn(type="button" class="btn.text-uppercase") load more
+									.item		
+										.carousel-caption
+											h1.text-capitalize we are 
+											p.text-center This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+											p.text-center quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+											p.text-center vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+											.text-center
+												btn(type="button" class="btn.text-uppercase") load more
+									.item		
+										.carousel-caption
+											h1.text-capitalize we are awesome
+											p.text-center This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+											p.text-center quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+											p.text-center vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+											.text-center
+												btn(type="button" class="btn.text-uppercase") load more	  
+								//Left and right controls
+									a(class="left carousel-control" href="#myCarousel" role="button" data-slide="prev")
+										span(class="glyphicon glyphicon-chevron-left" aria-hidden="true")
+										span.sr-only Previous
+									
+									a(class="right carousel-control" href="#myCarousel" role="button" data-slide="next")
+										span(class="glyphicon glyphicon-chevron-right" aria-hidden="true")
+										span.sr-only Next
