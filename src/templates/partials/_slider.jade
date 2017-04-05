@@ -1,0 +1,58 @@
+div(id="carousel" class="carousel slide" data-ride="carousel")
+	//Indicators
+	ol.carousel-indicators
+		li(data-target="#carousel" data-slide-to="0" class="active")
+		li(data-target="#carousel" data-slide-to="1")
+		li(data-target="#carousel" data-slide-to="2")
+		li(data-target="#carousel" data-slide-to="3")
+	//Wrapper for slides
+	div(class="carousel-inner" role="listbox")
+		.item.active
+			.carousel-caption
+				img(src="files/images/foto.png" alt="foto-1")
+				h1.text-capitalize we are awesome creative agency
+				p.text-center This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+					br
+					| quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+					br 
+					| vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+				.text-center
+					btn(type="button" class="btn.text-uppercase") load more				
+		.item
+			.carousel-caption
+				h1.text-capitalize we are awesome creative agency
+				p.text-center This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+					br
+					| quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+					br 
+					| vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+				.text-center
+					btn(type="button" class="btn.text-uppercase") load more	
+		.item
+			.carousel-caption
+				h1.text-capitalize we are awesome creative agency
+				p.text-center This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+					br
+					| quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+					br 
+					| vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+				.text-center
+					btn(type="button" class="btn.text-uppercase") load more
+		.item.active
+			.carousel-caption
+				h1.text-capitalize we are awesome creative agency
+				p.text-center This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+					br
+					| quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+					br 
+					| vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+				.text-center
+					btn(type="button" class="btn.text-uppercase") load more		
+	//Left and right controls
+		a(class="left carousel-control" href="#carousel" role="button" data-slide="prev")
+			span(class="glyphicon glyphicon-chevron-left" aria-hidden="true")
+			span.sr-only Previous
+		
+		a(class="right carousel-control" href="#carousel" role="button" data-slide="next")
+			span(class="glyphicon glyphicon-chevron-right" aria-hidden="true")
+			span.sr-only Next
