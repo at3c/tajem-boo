@@ -1,0 +1,20 @@
+//- header
+//- slides
+mixin slides(slides_items)
+	each el in slides_items		
+		- var cls = {'class': el.class};
+		- var src = {'src': el.src};
+		- var text = el.text;
+		- var btn_name = el.button_header;
+		.item&attributes(cls)
+			.slider-block
+				//img&attributes(src)
+			.carousel-caption
+				!{text}
+			.text-center
+				button(class='btn text-uppercase', type='button') #{btn_name}
+
+
+
+
+
