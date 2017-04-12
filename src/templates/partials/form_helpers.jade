@@ -6,13 +6,11 @@ mixin slides(slides_items)
 		- var src = {'src': el.src};
 		- var text = el.text;
 		- var btn_name = el.button_header;
-		.item&attributes(cls)
-			.slider-block
-				//img&attributes(src)
-			.carousel-caption
+		.item&attributes(cls)			
+			.carousel-caption.b-carousel_caption
 				!{text}
-			.text-center
-				button(class='btn text-uppercase', type='button') #{btn_name}
+				.text-center
+					button(class='btn text-uppercase button text-uppercase', type='button') #{btn_name}
 
 
 

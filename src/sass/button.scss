@@ -1,0 +1,25 @@
+header .item .carousel-caption .button {
+	text-align:center;
+	vertical-align: middle;
+	width: 120px;
+	height: 40px;
+	border: 1px solid #00E0D0;
+	border-radius: 0;
+	color: #00E0D0;	
+	font-weight: 700;
+  	background: rgba(0,0,0,0);		
+	transition: 0.7s;
+
+	&:hover {
+		color: white;		
+		background: rgba(0,224,208,0.6);	
+	  	transition: 0.4s;	
+	}
+
+	&:active {		
+		box-shadow: 0 0 15px rgba(0,0,0,0.9);
+		background: rgba(0,0,0,0);
+		color: #00E0D0;
+		transition: 0.1s;
+	}
+}

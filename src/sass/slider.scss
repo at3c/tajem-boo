@@ -1,0 +1,43 @@
+.b-slider_bg_image {
+background: linear-gradient(to right, rgba(44,39,75,0.85), rgba(67,51,108,0.85)), 
+	url("../files/images/foto.png") no-repeat center;
+	background-size: auto, cover;
+	background-attachment: scroll, fixed;
+}
+
+.carousel-inner {	
+
+	.b-carousel_caption {
+		position: relative;
+		left: 0;
+		right: 0;
+		
+		width: 100%;
+		padding: 200px 0;
+
+		h1, p {
+			margin-bottom: 60px;
+			margin-top: 10px;
+		}
+
+		h1:after {
+			content: "";
+			width: 50px;
+			height: 1px;
+			background-color: #00E0D0;
+			position: relative;
+			display: block;
+			box-sizing: border-box;		  
+			margin: 0 auto;
+			top: 30px;
+		}
+
+	}
+
+}
+
+.carousel-indicators {
+	.active {
+		background: #00E0D0;
+	}
+}
