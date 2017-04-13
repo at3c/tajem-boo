@@ -1,27 +1,17 @@
 include form_helpers
 .container-fluid
-		.row.b-slider_bg_image
-			.col-md-12
-				.container
-					div(id="carousel", class="carousel slide", data-ride="carousel")
-						//Wrapper for slides
-						div(class="carousel-inner", role="listbox")
-							+slides([{'class':'active', 'src':'', 'text':'<h1 class="text-capitalize"> we are awesome creative agency</h1><p class=\'text-center\'> This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</br>quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh</br>vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>','button_header':'load more'},
-							{'class':'', 'src':'', 'text':'<h1 class="text-capitalize"> we</h1><p class=\'text-center\'> This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</br>quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh</br>vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>','button_header':'load more'}, 
-							{'class':'', 'src':'', 'text':'<h1 class="text-capitalize"> are</h1><p class=\'text-center\'> This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</br>quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh</br>vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>','button_header':'load more'}, 
-							{'class':'', 'src':'', 'text':'<h1 class="text-capitalize">creative</h1><p class=\'text-center\'> This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</br>quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh</br>vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>','button_header':'load more'}
-							])
-						//Indicators
-						ol.carousel-indicators
-							li(data-target="#carousel", data-slide-to="0", class="active")
-							li(data-target="#carousel", data-slide-to="1")
-							li(data-target="#carousel", data-slide-to="2")
-							li(data-target="#carousel", data-slide-to="3")
-					//	//Left and right controls
-						a(class="left carousel-control" href="#carousel" role="button" data-slide="prev")
-							span(class="glyphicon glyphicon-chevron-left" aria-hidden="true")
-							span.sr-only Previous
-						a(class="right carousel-control" href="#carousel" role="button" data-slide="next")
-							span(class="glyphicon glyphicon-chevron-right" aria-hidden="true")
-							span.sr-only Next
-							
+		.row.b-slider_bg_image			
+			div(id="carousel", class="carousel slide", data-ride="carousel")
+				//Wrapper for slides
+				div(class="carousel-inner", role="listbox")
+					+slides([{'class':'active', 'src':'', 'text':'<h1 class="text-capitalize"> we are awesome creative agency</h1><p class=\'text-center\'> This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</br>quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh</br>vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>','button_header':'load more'}, 
+					{'class':'', 'src':'', 'text':'<h1 class="text-capitalize"> we</h1><p class=\'text-center\'> This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</br>quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh</br>vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>','button_header':'load more'}, 
+					{'class':'', 'src':'', 'text':'<h1 class="text-capitalize"> are</h1><p class=\'text-center\'> This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</br>quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh</br>vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>','button_header':'load more'}, 
+					{'class':'', 'src':'', 'text':'<h1 class="text-capitalize">creative</h1><p class=\'text-center\'> This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</br>quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh</br>vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>','button_header':'load more'}
+					])
+				//Indicators
+				ol.carousel-indicators
+					li(data-target="#carousel", data-slide-to="0", class="active")
+					li(data-target="#carousel", data-slide-to="1")
+					li(data-target="#carousel", data-slide-to="2")
+					li(data-target="#carousel", data-slide-to="3")

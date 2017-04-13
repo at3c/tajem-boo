@@ -1,5 +1,3 @@
-@import "slider.scss";
-
 .b-navbar_padding-top {
 	margin-top: 15px;
 }
@@ -43,4 +41,9 @@ nav .navbar-header {
 .navbar-brand {
 	font-size: 26px;	
 }
- 
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
