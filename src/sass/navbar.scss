@@ -3,6 +3,9 @@
 }
 
 .navbar-nav {	
+	li {
+		display: inline-block;
+	}
 	li > a {
 		color: #FFF;
 		padding-left: 0;
@@ -26,6 +29,19 @@ nav .navbar-header {
 
 		&:hover {
 			color: #FFF;
+		}
+	}
+
+	.navbar-toggle:hover {
+		background: #00E0D0;
+		opacity: .3;
+	}
+
+	.navbar-toggle .icon-bar {
+		background: #FFF;
+
+		&:hover {
+			background: #00E0D0;
 		}
 	}
 	

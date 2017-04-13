@@ -4,10 +4,15 @@ nav.navbar.navbar-fixed-top.b-navbar_padding-top
 						.row
 							.col-md-5				
 								.navbar-header
+									button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar")
+										span.icon-bar
+										span.icon-bar
+										span.icon-bar
 									object(type="image/svg+xml" data="files/svg/logo_tajem.svg")
 										img(src="files/images/logo_tajem.png" alt="image format png")
 									a(class="navbar-brand", href="#") tajam
 							.col-md-7
-								ul.nav.navbar-nav.navbar-right
-									+indicators([{'href':'#', 'btnName':'home', 'class':'active'}, {'href':'#', 'btnName':'about', 'class':''}, {'href':'#', 'btnName':'expertise', 'class':''}, {'href':'#', 'btnName':'teams', 'class':''}, {'href':'#', 'btnName':'works', 'class':''}, {'href':'#', 'btnName':'people say', 'class':''}, {'href':'#', 'btnName':'contact', 'class':''}
-									])
+								div(class="collapse navbar-collapse" id="myNavbar")
+									ul.nav.navbar-nav.navbar-right
+										+indicators([{'href':'#', 'btnName':'home', 'class':'active'}, {'href':'#', 'btnName':'about', 'class':''}, {'href':'#', 'btnName':'expertise', 'class':''}, {'href':'#', 'btnName':'teams', 'class':''}, {'href':'#', 'btnName':'works', 'class':''}, {'href':'#', 'btnName':'people say', 'class':''}, {'href':'#', 'btnName':'contact', 'class':''}
+										])
