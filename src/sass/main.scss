@@ -46,3 +46,9 @@
 	line-height: 20px;
 	text-align: justify;
 }
+
+@media (min-width: 1200px) {
+	.container {
+	    max-width: 970px;
+	}
+}

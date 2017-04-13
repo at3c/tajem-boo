@@ -37,6 +37,8 @@ background: linear-gradient(to right, rgba(44,39,75,0.85), rgba(67,51,108,0.85))
 }
 
 .carousel-indicators {
+	bottom: 70px;
+	
 	.active {
 		background: #00E0D0;
 	}

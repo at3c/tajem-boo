@@ -1,18 +1,23 @@
 //- header
 //- slides
 mixin slides(slides_items)
-	each el in slides_items		
+	each el in slides_items
 		- var cls = {'class': el.class};
 		- var src = {'src': el.src};
 		- var text = el.text;
 		- var btn_name = el.button_header;
-		.item&attributes(cls)		
+		.item&attributes(cls)
 			.carousel-caption.b-carousel_caption
 				!{text}
 				.text-center
 					button(class='btn text-uppercase button text-uppercase', type='button') #{btn_name}
 
-
-
-
-
+//- header
+//- indicators
+mixin indicators(indicators_items)
+	each el in indicators_items
+		- var href = {'href': el.href};
+		- var btn_name = el.btnName;
+		li
+			a(class='text-uppercase')&attributes(href)
+				!{btn_name}

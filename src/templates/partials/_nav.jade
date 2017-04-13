@@ -1,23 +1,15 @@
-nav.navbar.navbar-fixed-top
+include form_helpers
+nav.navbar.navbar-fixed-top.b-navbar_padding-top
 					.container
 						.row
-							.col-md-12
+							.col-md-5								
 								.navbar-header
 									object(type="image/svg+xml" data="files/svg/logo_tajem.svg")
 										img(src="files/images/logo_ta1jem.png" alt="image format png")
-									a(class="navbar-brand", href="#") tajem
+									a(class="navbar-brand", href="#") tajam
+							.col-md-7
 								ul.nav.navbar-nav.navbar-right
-									li
-										a(class="text-uppercase", href="#") home
-									li
-										a(class="text-uppercase", href="#") about
-									li
-										a(class="text-uppercase", href="#") expertise
-									li
-										a(class="text-uppercase", href="#") teams
-									li
-										a(class="text-uppercase", href="#") works
-									li
-										a(class="text-uppercase", href="#") people say
-									li
-										a(class="text-uppercase", href="#") contact
+									+indicators([{'href':'#', 'btnName':'home'}, {'href':'#', 'btnName':'about'}, {'href':'#', 'btnName':'expertise'}, {'href':'#', 'btnName':'teams'},
+									 {'href':'#', 'btnName':'works'}, {'href':'#', 'btnName':'people say'}, {'href':'#', 'btnName':'contact'}
+									 ])
+									
