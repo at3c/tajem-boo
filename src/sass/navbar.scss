@@ -10,7 +10,7 @@
 		padding-left: 0;
 		padding-right: 0;
 	
-		&:hover {
+		&:hover, &:focus {
 			color: #00E0D0;
 			background: none;
 		}

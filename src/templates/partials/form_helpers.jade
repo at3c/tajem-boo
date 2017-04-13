@@ -18,6 +18,7 @@ mixin indicators(indicators_items)
 	each el in indicators_items
 		- var href = {'href': el.href};
 		- var btn_name = el.btnName;
+		- var cls = {'class': el.class};
 		li
-			a(class='text-uppercase')&attributes(href)
+			a(class='text-uppercase')&attributes(href,cls)
 				!{btn_name}
