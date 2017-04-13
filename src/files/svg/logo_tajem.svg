@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<svg width="40" height="45" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <g class="layer1 layer">
+  <title>Layer 1</title>
+  <g id="svg_10">
+   <path fill="#ff0000" d="m0,35l20,-35l-10,35l-10,0z" id="svg_3" fill-opacity="0" stroke="#00e0d0"/>
+   <path fill="#ff0000" d="m10,35l10,-35l0,45l-10,-10z" fill-opacity="0" id="svg_6" stroke="#00e0d0"/>
+   <path fill="#ff0000" d="m20,45l0,-45l10,35l-10,10z" fill-opacity="0" stroke="#00e0d0" id="svg_8"/>
+   <path fill="#ff0000" d="m30,35l-10,-35l20,35l-10,0z" fill-opacity="0" stroke="#00e0d0" id="svg_9"/>
+  </g>
+ </g>
+</svg>

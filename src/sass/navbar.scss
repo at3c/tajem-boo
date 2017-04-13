@@ -1,6 +1,30 @@
 @import "slider.scss";
 
-.navbar-nav .navbar-link {
+nav .navbar-nav > li > a {
 	color: #FFF;
+
+	&:hover {
+		color: #00E0D0;
+		background: none;
+	}
+}
+
+nav .navbar-header {
+	
+	a {
+		color: #00E0D0;
+
+		&:hover {
+			color: #FFF;
+		}
+	}
+
+	object {
+		display: block;
+		float: left;
+		margin-right: 10px;
+
+	}
+
 }
  

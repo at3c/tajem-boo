@@ -98,12 +98,20 @@ gulp.task('imagemin', function(){
         .pipe(livereload());;
 });
 
+// compress image
+gulp.task('svg', function(){
+    return gulp.src(components.files.source + '/svg/**/*.*')        
+        .pipe(gulp.dest(components.files.dest + '/svg'))
+        .pipe(livereload());;
+});
+
 // watch changes in the files
-gulp.task('watch', ['jade', 'sass', 'scripts', 'imagemin'], function () {
+gulp.task('watch', ['jade', 'sass', 'scripts', 'imagemin', 'svg'], function () {
   gulp.watch(components.jade.watchHTML, ['jade']);
   gulp.watch(components.sass.watchCSS, ['sass']);
   gulp.watch(components.scripts.watchJS, ['scripts']);
   gulp.watch(components.scripts.watchFils + '/images/**/*.*', ['imagemin']);
+  gulp.watch(components.scripts.watchFils + '/svg/**/*.*', ['svg']);
 });
 
 // PRODUCTION
