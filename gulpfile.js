@@ -94,15 +94,14 @@ gulp.task('scripts', function () {
 gulp.task('imagemin', function(){
     return gulp.src(components.files.source + '/images/**/*.*')
         .pipe(imagemin())
-        .pipe(gulp.dest(components.files.dest + '/images'))
-        .pipe(livereload());;
+        .pipe(gulp.dest(components.files.dest + '/images'))        
 });
 
 // compress image
 gulp.task('svg', function(){
     return gulp.src(components.files.source + '/svg/**/*.*')        
         .pipe(gulp.dest(components.files.dest + '/svg'))
-        .pipe(livereload());;
+        .pipe(livereload());
 });
 
 // watch changes in the files

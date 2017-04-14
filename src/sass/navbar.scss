@@ -1,5 +1,6 @@
-.b-navbar_padding-top {
-	margin-top: 15px;
+.b-navbar_padding_margin {
+	padding: 15px 0;
+	margin: 0;	
 }
 
 .navbar-nav {	
@@ -56,9 +57,3 @@ nav .navbar-header {
 .navbar-brand {
 	font-size: 26px;	
 }
-
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-      width: 70%;
-      margin: auto;
-  }
