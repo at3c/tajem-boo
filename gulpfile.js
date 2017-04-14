@@ -92,8 +92,7 @@ gulp.task('scripts', function () {
 
 // compress image
 gulp.task('imagemin', function(){
-    return gulp.src(components.files.source + '/images/**/*.*')
-        .pipe(imagemin())
+    return gulp.src(components.files.source + '/images/**/*.*')        
         .pipe(gulp.dest(components.files.dest + '/images'))        
 });
 
