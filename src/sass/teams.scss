@@ -1,0 +1,15 @@
+.b-teams {
+	color: #fff;
+
+	.b-teams_padding {
+		padding: 70px 0;
+	}
+}
+
+.b-teams_bg-image {
+	background: linear-gradient(to right, rgba(44,39,75,0.85), rgba(67,51,108,0.85)), 
+	url("../files/images/bg-team.png") no-repeat center;
+	background-size: auto, cover;
+	background-attachment: scroll, fixed;
+}
+
