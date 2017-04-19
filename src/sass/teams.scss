@@ -1,10 +1,43 @@
 .b-teams {
-	color: #fff;
+	color: #fff;	
 
-	.b-teams_padding {
-		padding: 70px 0;
+	h3 + p {
+		margin-bottom: 60px;
+
+		&:after {
+			content: "";
+			background: #fff;
+			width: 50px;
+			height: 1px;
+			position: relative;
+			display: block;
+			box-sizing: border-box;
+			margin: 0 auto;
+			top: 20px;
+		}
+	}
+
+
+}
+
+.b-teams_padding_top_bottom {
+	padding: 70px 0;
+}
+
+.team-item {
+	padding: 25px 0 15px 0;
+	border: 1px solid #fff;
+	font-size: 90%;
+
+	span {
+		font-weight: 700;
 	}
 }
+
+.team-item_padding {
+	padding: 0 15px;
+}
+
 
 .b-teams_bg-image {
 	background: linear-gradient(to right, rgba(44,39,75,0.85), rgba(67,51,108,0.85)), 
@@ -13,3 +46,10 @@
 	background-attachment: scroll, fixed;
 }
 
+.b-teams_items_padding {
+	padding-bottom: 70px;
+}
+
+.b-teams_button_margin {
+	margin-bottom: 30px;
+}
