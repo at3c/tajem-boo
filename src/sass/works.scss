@@ -1,0 +1,23 @@
+.b-works_padding {
+	padding: 70px 0;
+}
+
+.b-works_link_style {
+	color: black;
+
+	&:hover {
+		text-decoration: none;
+		color: #00E0D0;
+	}
+	
+}
+
+.b-works {
+	h3 {
+		margin: 0;
+	}
+
+	.b-work_elements_margin {
+		margin-bottom: 70px;
+	}
+}
