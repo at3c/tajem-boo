@@ -1,0 +1,28 @@
+include form_helpers
+.b-people
+	.container-fluid
+		.row.b-people_bg_image.b-people_padding
+			div(id="sayCarousel", class="carousel slide", data-ride="carousel")
+				//Wrapper for slides
+				div(class="carousel-inner", role="listbox")
+					+saySlides([{'class':'active', 'src':'', 'text':'<p>&#8220;</p><p class=\'text-center\'> This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,</br> lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh</br> vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a</br> ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p><p><strong class="text-uppercase">jane galadriel</strong></br>ceo tengkurep</p>'},
+					{'class':'', 'src':'', 'text':'<p>&#8220;</p><p class=\'text-center\'> This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,</br> lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh</br> vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a</br> ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p><p><strong class="text-uppercase">jane galadriel</strong></br>manager</p>'},
+					{'class':'', 'src':'', 'text':'<p>&#8220;</p><p class=\'text-center\'> This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,</br> lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh</br> vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a</br> ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p><p><strong class="text-uppercase">jane galadriel</strong></br>co-founder</p>'},
+					{'class':'', 'src':'', 'text':'<p>&#8220;</p><p class=\'text-center\'> This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,</br> lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh</br> vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a</br> ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p><p><strong class="text-uppercase">jane galadriel</strong></br>ceo tengkurep</p>'},
+					{'class':'', 'src':'', 'text':'<p>&#8220;</p><p class=\'text-center\'> This is Photoshop\'s version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,</br> lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh</br> vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a</br> ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p><p><strong class="text-uppercase">jane galadriel</strong></br>QA engineer</p>'}
+					])
+				//Indicators
+				ol.carousel-indicators.block-center
+					li(class="b-people_item ind-1 block-center" data-target="#sayCarousel", data-slide-to="0", class="active")
+					li(class="b-people_item ind-2" data-target="#sayCarousel", data-slide-to="1")
+					li(class="b-people_item ind-3" data-target="#sayCarousel", data-slide-to="2")
+					li(class="b-people_item ind-4" data-target="#sayCarousel", data-slide-to="3")
+					li(class="b-people_item ind-5" data-target="#sayCarousel", data-slide-to="4")
+				//Left and right controls
+				a(class="left carousel-control" href="#sayCarousel" role="button" data-slide="prev")
+					span(class="glyphicon glyphicon-chevron-left" aria-hidden="true")
+					span.sr-only Previous
+				a(class="right carousel-control" href="#sayCarousel" role="button" data-slide="next")
+					span(class="glyphicon glyphicon-chevron-right" aria-hidden="true")
+					span.sr-only Next
+				
