@@ -14,7 +14,7 @@ background: linear-gradient(to right, rgba(44,39,75,0.85), rgba(67,51,108,0.85))
 	.carousel-inner {
 
 		.b-people_carousel_caption {
-			position: relative;
+			position: relative;			
 			left: 0;
 			right: 0;
 			width: 100%;
@@ -42,25 +42,36 @@ background: linear-gradient(to right, rgba(44,39,75,0.85), rgba(67,51,108,0.85))
 
 	}
 
-	.carousel-control {		
+	.carousel-control {
 		top:85%;
 		width: 30px;
 		height: 50px;
-		background: none;			
+		background: none;
+		z-index: 15;
 	}
 
+	.carousel {
+		a[class*="left"] {
+			left: 30%;
+		}
+
+		a[class*="right"] {
+			right: 30%;
+		}
+	}
 
 	.carousel-indicators {
 		position: relative;
 		margin-bottom: 0;
 		bottom: 0;
-
+		z-index: 1;
 
 		li {
 			background-color: transparent;
 			width: 45px;
 			height: 45px;
 			border-radius: 23px;
+			border: none;
 		}
 
 		.b-people_item:nth-child(1) {
@@ -88,6 +99,7 @@ background: linear-gradient(to right, rgba(44,39,75,0.85), rgba(67,51,108,0.85))
 			height: 70px;
 			border-radius: 35px;
 			margin-bottom: -12px;
+			border: none;
 		}
 	}
 }
