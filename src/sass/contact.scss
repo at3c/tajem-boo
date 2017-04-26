@@ -1,3 +1,29 @@
 .b-contact_padding {
 	padding: 70px 0;
 }
+
+.b-contact {
+	h3 {
+		margin: 0 0 35px 0;
+	}
+	.form-group {
+		margin-bottom: 25px;
+	}
+
+	input, textarea {
+		border-radius: 0;
+		padding: 20px;		
+	}
+
+	textarea {
+		resize: none;
+	}
+
+	button {
+
+	}
+}
+
+.b-contact_brand_margin {
+	margin-bottom: 20px;
+}
